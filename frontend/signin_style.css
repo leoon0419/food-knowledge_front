@@ -1,0 +1,125 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 共通スタイル */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(images/Signin/bg_1.png);
+}
+
+.fade-out {
+    opacity: 0; /* 背景フェードアウト時の透明度 */
+}
+
+.fade-in {
+    opacity: 1; /* 背景フェードイン時の透明度 */
+}
+
+.signin_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.signin_box {
+    background-color: #d3d3d3;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.signin_box h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-size: 16px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signin_box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.btn_container {
+    margin-top: 30px;
+}
+
+.error_message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+
+/* スマートフォン向けスタイル */
+@media screen and (max-width: 768px) {
+    .signin_box {
+        padding: 20px;
+    }
+
+    .signin_box h2 {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .signin_box button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .back_button {
+        top: 5px;
+        left: 5px;
+        font-size: 18px;
+    }
+}

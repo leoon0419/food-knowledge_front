@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food-knowledge | フードナレッジ</title>
+    <link rel="stylesheet" href="mainpage_style.css">
+</head>
+<body>
+    <header class="main_header"><!-- header全体の設定 -->
+        <div class="header_Layout"><!-- header内の全要素をラップ -->
+            <div class="vertical"><!-- メインロゴと検索フォームをラップ -->
+                <a href="mainpage_style.css">
+                    <img class="main_logo" src="images/header/logo.png" alt="Food Knowledge Logo">
+                </a>
+                <div class="search_container"> <!-- 検索バーとボタンをラップ -->
+                        <input type="text" id="searchInput" placeholder="検索ワードを入力" required>
+                        <button type="submit" class="search_button">検索</button>
+                </div>
+
+            </div>
+
+            <nav class="other"><!-- ナビゲーション用のアイコンを３つ設定 -->
+                <a href=""><img src="images/header/navi_star.png" alt="お気に入り"></a>
+                <a href=""><img src="images/header/navi_calendar.png" alt="カレンダー"></a>
+                <a href=""><img src="images/header/navi_login.png" alt="ログイン"></a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Slider Section -->
+        <section class="slider_container">
+            <button id="prevBtn">＜</button>
+            <div class="slider">
+                <div class="slider_track">
+                    <img src="images/main/slider_1.jpg" alt="スライダー画像1">
+                    <img src="images/main/slider_2.jpg" alt="スライダー画像2">
+                    <img src="images/main/slider_3.jpg" alt="スライダー画像3">
+                    <img src="images/main/slider_4.jpg" alt="スライダー画像4">
+                    <img src="images/main/slider_5.jpg" alt="スライダー画像5">
+                </div>
+            </div>
+            <button id="nextBtn">＞</button>
+        </section>
+
+
+        
+        <article class="recommendation_contents">
+                <div class="annotation">※食材名、料理名クリックで詳細のページへ移動します。</div>
+
+
+            <div class="main_contents">
+                <section class="recommendation_container"><!-- 食材のランキング -->
+                    <div class="recommendation">
+                        <img class="medal" src="images/main/gold_medal.png" alt="金メダル">
+                        <div class="content">
+                            <img src="images/main/contentLesson_(id).jpg" alt="オムライス">
+                            <div class="a_2">
+                                <section class="name">
+                                    <a href="contentsLesson.html"><!--旦仮設置、後ほど講師ページへ繋ぐ--><h3>現役のプロが教える！ ミシュラン獲得店のオムライス</h3></a>
+                                </section>
+                                <section class="explanation">
+                                    <p>3年連続ミシュランの一つ星を獲得している洋食店「麻布笄軒」。</p>
+                                    <p>現職のシェフが教える一線を隔したオムライス。</p>
+                                </section>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="recommendation">
+                        <img class="medal" src="images/main/silver_medal.png" alt="銀メダル">
+                        <div class="content">
+                            <!-- コンテンツとイメージを配置 -->
+                        </div>
+                    </div>
+                    <div class="recommendation">
+                        <img class="medal" src="images/main/bronze_medal.png" alt="銅メダル">
+                        <div class="content">
+                            <!-- コンテンツとイメージを配置 -->
+                        </div>
+                    </div>
+                </section>
+
+                <section class="recommendation_container"><!-- 講義のランキング -->
+                    <div class="recommendation">
+                        <img class="medal" src="images/main/gold_medal.png" alt="金メダル">
+                        <div class="content">
+                            <!-- コンテンツとイメージを配置 -->
+                        </div>
+                    </div>
+                    <div class="recommendation">
+                        <img class="medal" src="images/main/silver_medal.png" alt="銀メダル">
+                        <div class="content">
+                            <!-- コンテンツとイメージを配置 -->
+                        </div>
+                    </div>
+                    <div class="recommendation">
+                        <img class="medal" src="images/main/bronze_medal.png" alt="銅メダル">
+                        <div class="content">
+                            <!-- コンテンツとイメージを配置 -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+        
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

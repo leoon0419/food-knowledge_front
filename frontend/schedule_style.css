@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.schedule_header {
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(130, 130, 130, 0.5);
+}
+
+.back_button {
+    width: 40px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.back_button:hover {
+    background-color: rgba(1,1,1,0.4);
+    transition: 0.5s;
+}
+
+.schedule_header h1 {
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.schedule_details {
+    width: 70%;
+    height: 70px;
+    margin: 100px auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(130, 130, 130, 0.5); /* 下部に線を表示*/
+}
+
+.schedule_details:hover {
+    background-color: rgba(255, 155, 68, 0.4);
+    transition: 0.8s;
+}
+
+.date {
+    width: 50px;
+    max-width: 50px; /* 日付の範囲を統一 */
+    margin-left: 20px; /* 左:20pxの空白を追加 */
+}
+
+.time {
+    width: 80px;
+    max-width: 80px;
+    margin: 0 auto; /* 両脇を均等に幅あけ */
+    text-align: center;
+    font-size: 20px;
+}
+
+.lecture_details {
+    width: inherit; /* コンテンツに合わせる */
+    max-width: inherit;
+    text-align: left; /* 文章の始まりを統一 */
+    font-size: 22px;
+}
+
+/* スマートフォン用スタイル */
+@media (max-width: 768px) {
+    .schedule_header h1 {
+        font-size: 1.2em;
+    }
+
+    .back_button {
+        width: 35px;
+        height: 28px;
+    }
+
+    .schedule_details {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5px;
+    }
+
+    .date,
+    .time,
+    .lecture_details {
+        width: 100%;
+        text-align: left;
+    }
+
+    .date,
+    .time {
+        font-size: 0.9em;
+    }
+
+    .lecture_details {
+        font-size: 1em;
+    }
+}
+
