@@ -1,0 +1,102 @@
+/* 共通スタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.form_container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input_field {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#schedule_date, #schedule_time {
+    font-size: 12px; /* テキストサイズを小さくする */
+    padding: 4px;    /* 内側のスペースを減らす */
+    width: auto;     /* サイズを自動調整に設定 */
+}
+
+.input_field:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit_button {
+    margin: 50px auto 30px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.submit_button:hover {
+    opacity: 0.8;
+}
+
+.submit_button:active {
+    background-color: #e76f51;
+}
+
+/* スマートフォン用スタイル */
+@media (max-width: 768px) {
+    body {
+       background-image: url(images/reservation/reservation_back.jpeg);
+    }
+
+    .form_container {
+        width: 80%;
+        padding: 15px; /* スペースを調整 */
+        box-shadow: none; 
+        border: 1px solid #ddd; 
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .input_field {
+        font-size: 12px; 
+        padding: 6px; /* 入力フィールドの余白縮小 */
+    }
+
+    .submit_button {
+        margin: 50px auto 30px;
+        font-size: 12px; 
+        padding: 8px; /* 余白減らす */
+    }
+
+    
+}

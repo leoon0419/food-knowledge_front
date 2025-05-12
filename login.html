@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <!--viewport=画面上の表示領域
+            content="width=device-width"=閲覧するデバイスに横幅を調節
+            initial-scale=1.0"=ページを等倍で表示
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food-knowledge | ログイン画面</title>
+        <meta name="description" content="ログインページ">
+        <link rel="stylesheet" href="login_style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/header/logo.png" alt="Food Knowledge Logo">
+            </div>
+        </header>
+
+        <main class="login_main">
+            <div class="login_container">
+                <div class="login_box">
+                    <h2>ログインID</h2>
+                    <input type="text" id="loginID" placeholder="ログインID">
+                    <h2>パスワード</h2>
+                    <input type="password" id="password" placeholder="パスワード">
+                    <button id="loginBtn" disabled>ログイン</button>
+                    
+                    <a href="forgot.html" id="forgotPassword">パスワードを忘れた↪︎</a>
+                </div>
+                <div class="register_box">
+                    <h2>初めてご利用の方</h2>
+                    <p>※ボタンクリックで新規会員ページへ移動します</p>
+                    <a href="signin.html" target="_blank">
+                        <button id="registerBtn">新規登録</button>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
